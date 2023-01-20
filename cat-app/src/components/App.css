@@ -1,0 +1,8 @@
+.App {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}

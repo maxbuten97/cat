@@ -1,0 +1,167 @@
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+}
+.cards-item {
+  cursor: pointer;
+  display: flex;
+  width: 100%;
+  max-width: 320px;
+  background-color: #f2f2f2;
+  border: 4px solid #1698d9;
+  border-radius: 0 12px 12px 12px;
+  border-top-left-radius: 80px;
+}
+
+.cards-item:hover {
+  border-color: #2ea8e6;
+}
+
+.cards-item-selected {
+  border: 4px solid #d91667;
+}
+
+.cards-item-selected:hover {
+  border: 4px solid #e52e7a;
+}
+
+.item__info-title {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  height: 44px;
+  text-align: center;
+}
+
+.item__info {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  height: 50vh;
+}
+.item__info-title_header {
+  font-family: "Trebuchet MS", "Arial", sans-serif, serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.item__info-main {
+  margin: 0 61px 0 48px;
+}
+
+h2 {
+  font-family: "Trebuchet MS", "Arial", sans-serif, serif;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.gift,
+.quantity {
+  font-family: "Trebuchet MS", "Arial", sans-serif, serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.test {
+  margin-left: 0;
+  margin-top: 15px;
+  line-height: 16px;
+  max-width: 130px;
+}
+
+.quantity {
+  line-height: 10px;
+}
+
+.taste {
+  display: block;
+  font-size: 24px;
+  font-family: "Trebuchet MS", "Arial", sans-serif, serif;
+  font-weight: 700;
+  margin-bottom: 5px;
+  line-height: 20px;
+}
+
+.img-cat {
+  width: 100%;
+  max-width: 315px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 10px;
+}
+
+.weight__circle {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  width: 100%;
+  max-width: 80px;
+  height: 100%;
+  max-height: 80px;
+  background-color: #1698d9;
+  border-radius: 50%;
+}
+
+.cards-item:hover .weight__circle {
+  border-color: #2ea8e6;
+  background-color: #2ea8e6;
+}
+.circle-selected {
+  background-color: #d91667;
+}
+
+.circle-selected:hover {
+  background-color: #e52e7a;
+}
+
+.cards-item-selected:hover .circle-selected {
+  border-color: #e52e7a;
+  background-color: #e52e7a;
+}
+
+.weight,
+.kg {
+  font-family: "Trebuchet MS", "Arial", sans-serif, serif;
+  font-weight: 400;
+  font-size: 42px;
+  color: #ffffff;
+}
+
+.kg {
+  font-size: 20px;
+  line-height: 10px;
+}
+
+.text-footer {
+  margin-top: 14px;
+  font-family: "Trebuchet MS", "Arial", sans-serif, serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+}
+
+.buy {
+  cursor: pointer;
+  font-family: "Trebuchet MS", "Arial", sans-serif, serif;
+  color: #1698d9;
+  border-bottom: 1px dashed currentColor;
+}
+
+.leaved-text {
+  color: #e62e7a;
+}

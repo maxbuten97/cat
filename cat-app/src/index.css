@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap");
+
+* {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 100;
+}
+
+body {
+  margin: 0 80px;
+  background: url(./img/background.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.title {
+  font-family: "Exo 2";
+  font-weight: lighter;
+  font-size: 36px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0px 1px 1px #000000;
+  margin-bottom: 24px;
+}
