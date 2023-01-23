@@ -37,29 +37,26 @@ const Card = ({ card }) => {
           </span>
         );
       }
-    }  
-      return (
-        <span className="item__info-title_header">
-          Сказочное заморское яство
-        </span>
-      );
-    
+    }
+    return (
+      <span className="item__info-title_header">Сказочное заморское яство</span>
+    );
   }
 
   function leavedItem() {
-    if(dataCard.disabled){
-        return
+    if (dataCard.disabled) {
+      return;
     }
     if (selected) {
       if (!leaved) {
         setLeaved(!leaved);
       }
-    } 
+    }
     if (!selected) {
-        if (leaved) {
-          setLeaved(!leaved);
-        }
-      } 
+      if (leaved) {
+        setLeaved(!leaved);
+      }
+    }
   }
 
   function getClassNameBySelected(isItem) {
@@ -79,22 +76,22 @@ const Card = ({ card }) => {
   }
 
   function selectItem() {
-    if(dataCard.disabled) {
-        return
+    if (dataCard.disabled) {
+      return;
     }
     setSelected(!selected);
   }
 
-function isDisabled() {
-    if(dataCard.disabled) {
-        return 'grayscale(1)'
+  function isDisabled() {
+    if (dataCard.disabled) {
+      return "grayscale(1)";
     } else {
-        return ''
+      return "";
     }
-}
+  }
 
   return (
-    <div key={dataCard.id} className="wrap" style={{filter: isDisabled()}}>
+    <div key={dataCard.id} className="wrap" style={{ filter: isDisabled() }}>
       <div
         className={getClassNameBySelected(true)}
         onClick={() => {
@@ -112,12 +109,12 @@ function isDisabled() {
           </div>
           <div className="item__info-main">
             <h2>
-              Нямушка <br />
+              Нямушка
               <span className="taste">{dataCard.taste}</span>
             </h2>
             <div className="test">
-              <span className="quantity">{dataCard.quantity}</span> <br />
-              <span className="gift">{dataCard.gift}</span>
+              <span className="quantity">{dataCard.quantity}</span>
+              <span className="gift">{dataCard.gift}</span> 
             </div>
           </div>
 
